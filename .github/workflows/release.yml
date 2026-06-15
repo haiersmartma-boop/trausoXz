@@ -1,6 +1,10 @@
 name: Release
 on:
+  workflow_dispatch: # <--- ADD THIS EXACT LINE
   push:
+    branches:
+      - master
+      - main
     tags:
       - 'v*'
 
